@@ -1,0 +1,9 @@
+[Unit]
+Description=Disable The Integrated Keyboard On Startup
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/disable_keyboard.sh
+
+[Install]
+WantedBy=multi-user.target # Run when the system reaches multi-user stat
